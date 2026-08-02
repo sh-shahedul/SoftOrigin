@@ -12,7 +12,7 @@ const team = [
     },
     {
         name: 'Shahedul Hoque',
-        role: 'Chief Operating & Financial Officer (COO)',
+        role: 'Chief Operating & Financial Officer (COO,CFO)',
         description:
             'Overseeing day-to-day operations and building efficient workflows that keep every project running smoothly.',
         image: remal,
@@ -21,7 +21,7 @@ const team = [
     },
     {
         name: 'Ashadul Islam',
-        role: 'Chief Technology & Growth Officer',
+        role: 'Chief Technology & Growth Officer (CTO,CGO)',
         description:
             'Coordinating teams and timelines to ensure every project is delivered on time and to the highest standard.',
         image: remal,
