@@ -5,6 +5,7 @@ import WhyChooseUs from '../../Components/WhyChooseUs/WhyChooseUs';
 import UseTech from '../../Components/UseTech/UseTech';
 import FeatureProjects from '../../Components/FeatureProject/FeatureProjects';
 import Management from '../../Components/Management/Management';
+import AboutCta from '../../Components/Cta/AboutCta';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <FeatureProjects></FeatureProjects>
             <Management></Management>
             <UseTech></UseTech>
+            <AboutCta />
 
         </div>
     );
