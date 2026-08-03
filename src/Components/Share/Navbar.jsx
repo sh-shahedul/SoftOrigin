@@ -6,7 +6,7 @@ import logo from "../../assets/soft-origin-logo.png";
 const NAV_LINKS = [
     { label: 'Home', href: '#home' },
     { label: 'About Us', href: '/about', isRoute: true },
-    { label: 'Our Services', href: '#services' },
+    { label: 'Our Services', href: '/services', isRoute: true },
     { label: 'Our Projects', href: '#projects' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Blogs', href: '#blogs' },

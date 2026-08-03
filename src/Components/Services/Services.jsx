@@ -1,52 +1,38 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowUpRight, FiCheck } from 'react-icons/fi';
-
-// Add one image per service in your assets folder and import them here.
-// Replace these paths with your own real images.
-import customSoftwareImg from "../../assets/hero.jpg"; 
-import webAppImg from "../../assets/hero.jpg"; 
-import mobileAppImg from "../../assets/hero.jpg"; 
-import saasImg from "../../assets/hero.jpg"; 
-import apiBackendImg from "../../assets/hero.jpg"; 
-import uiuxImg from "../../assets/hero.jpg"; 
+import serviceImage from '../../assets/hero.jpg';
 
 const services = [
     {
         number: '01',
         title: 'Custom Software Development',
         description: 'Tailor-made software built from scratch to solve your specific business challenges with high performance and efficiency.',
-        image: customSoftwareImg,
     },
     {
         number: '02',
         title: 'Web Application Development',
         description: 'Modern, fast, and responsive web applications built using React, Next.js, and robust full-stack frameworks.',
-        image: webAppImg,
     },
     {
         number: '03',
         title: 'Mobile App Development',
         description: 'Cross-platform iOS and Android apps designed for smooth user experiences and high performance.',
-        image: mobileAppImg,
     },
     {
         number: '04',
         title: 'SaaS Product Engineering',
         description: 'Scalable multi-tenant SaaS architecture designed to handle high traffic, subscription models, and seamless user management.',
-        image: saasImg,
     },
     {
         number: '05',
         title: 'API & Backend Development',
         description: 'Secure, RESTful, and GraphQL APIs paired with high-performance Node.js and database architectures.',
-        image: apiBackendImg,
     },
     {
         number: '06',
         title: 'UI/UX Design & Prototyping',
         description: 'User-centered wireframes and interactive UI designs built to maximize conversion and user engagement.',
-        image: uiuxImg,
     },
 ];
 
@@ -64,16 +50,13 @@ const Services = () => {
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                 >
-                    <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-cyan-400">
-                        What we do
-                    </p>
-                    <h2 className="text-2xl font-bold leading-tight md:text-5xl lg:text-6xl uppercase">
-                        <span className=" text-white">Our Software</span> <br />
-                        <span className=" text-cyan-400">Development Services</span>
+                    <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-cyan-400">What we do</p>
+                    <h2 className="text-2xl font-bold leading-tight uppercase md:text-5xl lg:text-6xl">
+                        <span className="text-white">Our Software</span> <br />
+                        <span className="text-cyan-400">Development Services</span>
                     </h2>
-                    <p className="mx-auto mt-3 md:mt-5 max-w-5xl text-base leading-7 text-slate-300 md:text-lg">
-                        We turn ambitious ideas into secure, scalable digital products—delivering thoughtful design,
-                        robust engineering, and dependable support from start to finish.
+                    <p className="mx-auto mt-3 max-w-5xl text-base leading-7 text-slate-300 md:mt-5 md:text-lg">
+                        We turn ambitious ideas into secure, scalable digital products—delivering thoughtful design, robust engineering, and dependable support from start to finish.
                     </p>
                 </motion.div>
 
@@ -101,15 +84,13 @@ const Services = () => {
                                     }`}
                                     aria-pressed={isActive}
                                 >
-                                    <span
-                                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold transition-colors duration-300 ${
-                                            isActive ? 'bg-cyan-400 text-[#001E5F]' : 'bg-[#102859] text-white group-hover:bg-cyan-400/20'
-                                        }`}
-                                    >
+                                    <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold transition-colors duration-300 ${
+                                        isActive ? 'bg-cyan-400 text-[#001E5F]' : 'bg-[#102859] text-white group-hover:bg-cyan-400/20'
+                                    }`}>
                                         {service.number}
                                     </span>
                                     <span>
-                                        <span className="block text-lg font-bold text-white uppercase">{service.title}</span>
+                                        <span className="block text-lg font-bold uppercase text-white">{service.title}</span>
                                         <span className="mt-2 block text-sm leading-6 text-slate-400">{service.description}</span>
                                     </span>
                                 </motion.button>
@@ -127,7 +108,7 @@ const Services = () => {
                         <AnimatePresence mode="sync">
                             <motion.img
                                 key={`img-${selectedService.number}`}
-                                src={selectedService.image}
+                                src={serviceImage}
                                 alt={selectedService.title}
                                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                 initial={{ opacity: 0, scale: 1.08 }}
@@ -150,16 +131,9 @@ const Services = () => {
                                 <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-400/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-cyan-200">
                                     <FiCheck /> SoftOrigin expertise
                                 </span>
-                                <h3 className="max-w-md text-3xl font-bold leading-tight md:text-4xl">
-                                    {selectedService.title}
-                                </h3>
-                                <p className="mt-4 max-w-lg text-base leading-7 text-slate-200">
-                                    {selectedService.description}
-                                </p>
-                                <a
-                                    href="#contact"
-                                    className="mt-7 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-5 py-3 text-sm font-bold text-[#001E5F] transition hover:bg-cyan-300 hover:gap-4"
-                                >
+                                <h3 className="max-w-md text-3xl font-bold leading-tight md:text-4xl">{selectedService.title}</h3>
+                                <p className="mt-4 max-w-lg text-base leading-7 text-slate-200">{selectedService.description}</p>
+                                <a href="#contact" className="mt-7 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-5 py-3 text-sm font-bold text-[#001E5F] transition hover:gap-4 hover:bg-cyan-300">
                                     Discuss your project <FiArrowUpRight className="text-lg" />
                                 </a>
                             </motion.div>
