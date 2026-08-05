@@ -4,10 +4,10 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import logo from "../../assets/soft-origin-logo.png";
 // Simple links — no dropdown
 const NAV_LINKS = [
-    { label: 'Home', href: '#home' },
+    { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about', isRoute: true },
     { label: 'Our Services', href: '/services', isRoute: true },
-    { label: 'Our Projects', href: '#projects' },
+    { label: 'Our Projects', href: '/project' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Blogs', href: '#blogs' },
 ]
@@ -47,7 +47,7 @@ const Navbar = () => {
                             <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#001E5F] transition-all duration-300 group-hover:w-full" />
                         </Link>
 
-                        {/* About Us — dropdown */}
+                        
                         {/* Remaining simple links */}
                         {NAV_LINKS.filter((l) => l.label !== 'Home').map((link) => (
                             link.isRoute ? (
