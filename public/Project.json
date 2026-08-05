@@ -1,0 +1,92 @@
+[
+    {
+        "id": "ecommerce-platform",
+        "image": "https://picsum.photos/seed/ecommerce-platform/800/600",
+        "category": "Web App / E-commerce",
+        "title": "E-Commerce Development Platform",
+        "description": "A full-featured online store with product management, secure checkout, and real-time order tracking.",
+        "tags": ["Next.js", "Node.js", "MongoDB"],
+        "link": "/projects/ecommerce-platform"
+    },
+    {
+        "id": "hospital-management",
+        "image": "https://picsum.photos/seed/hospital-management/800/600",
+        "category": "Web App / Healthcare",
+        "title": "Hospital Management System",
+        "description": "A centralized system for patient records, appointment scheduling, billing, and staff management.",
+        "tags": ["React", "Node.js", "MySQL"],
+        "link": "/projects/hospital-management"
+    },
+    {
+        "id": "service-booking",
+        "image": "https://picsum.photos/seed/service-booking/800/600",
+        "category": "Mobile App",
+        "title": "Cross-Platform Service Booking",
+        "description": "A seamless booking platform with real-time tracking, payment gateway, and instant notifications.",
+        "tags": ["React Native", "Firebase"],
+        "link": "/projects/service-booking"
+    },
+    {
+        "id": "saas-dashboard",
+        "image": "https://picsum.photos/seed/saas-dashboard/800/600",
+        "category": "SaaS",
+        "title": "Multi-Tenant SaaS Dashboard",
+        "description": "A scalable analytics dashboard with team workspaces, role-based access, and usage-based billing.",
+        "tags": ["Next.js", "PostgreSQL", "Stripe"],
+        "link": "/projects/saas-dashboard"
+    },
+    {
+        "id": "lms-platform",
+        "image": "https://picsum.photos/seed/lms-platform/800/600",
+        "category": "Web App / Education",
+        "title": "Online Learning Management System",
+        "description": "A complete LMS with course creation, video streaming, quizzes, and student progress tracking.",
+        "tags": ["React", "Express", "MongoDB"],
+        "link": "/projects/lms-platform"
+    },
+    {
+        "id": "real-estate-app",
+        "image": "https://picsum.photos/seed/real-estate-app/800/600",
+        "category": "Mobile App",
+        "title": "Real Estate Listing App",
+        "description": "A property browsing app with map-based search, saved listings, and agent-buyer chat.",
+        "tags": ["React Native", "Node.js"],
+        "link": "/projects/real-estate-app"
+    },
+    {
+        "id": "expense-tracker",
+        "image": "https://picsum.photos/seed/expense-tracker/800/600",
+        "category": "Web App / Finance",
+        "title": "Expense & Budget Tracker",
+        "description": "A personal finance tool with automated categorization, budget alerts, and visual spending reports.",
+        "tags": ["React", "Laravel", "MySQL"],
+        "link": "/projects/expense-tracker"
+    },
+    {
+        "id": "fleet-management",
+        "image": "https://picsum.photos/seed/fleet-management/800/600",
+        "category": "Web App / Logistics",
+        "title": "Fleet Management System",
+        "description": "A logistics platform for vehicle tracking, route optimization, and maintenance scheduling.",
+        "tags": ["Vue.js", "Node.js", "MongoDB"],
+        "link": "/projects/fleet-management"
+    },
+    {
+        "id": "hr-payroll",
+        "image": "https://picsum.photos/seed/hr-payroll/800/600",
+        "category": "Web App / HR",
+        "title": "HR & Payroll Management",
+        "description": "An HR suite covering attendance, leave management, payroll processing, and employee records.",
+        "tags": ["Next.js", "Node.js", "PostgreSQL"],
+        "link": "/projects/hr-payroll"
+    },
+    {
+        "id": "restaurant-ordering",
+        "image": "https://picsum.photos/seed/restaurant-ordering/800/600",
+        "category": "Web App / Restaurant",
+        "title": "Restaurant Ordering System",
+        "description": "An online ordering and table reservation system with live kitchen order tracking.",
+        "tags": ["React", "Express", "MongoDB"],
+        "link": "/projects/restaurant-ordering"
+    }
+]
