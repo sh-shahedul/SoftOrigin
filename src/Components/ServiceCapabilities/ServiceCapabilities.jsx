@@ -10,7 +10,7 @@ const capabilities = [
 
 const ServiceCapabilities = () => (
     <section className="overflow-hidden bg-[#020b1d] py-20 text-white md:py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-10">
+        <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-10">
             <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
                 <p className="text-sm font-bold uppercase tracking-[0.24em] text-cyan-400">Built for what&apos;s next</p>
                 <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">The right technology, thoughtfully applied.</h2>
