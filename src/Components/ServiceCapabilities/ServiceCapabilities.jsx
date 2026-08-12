@@ -20,7 +20,7 @@ const ServiceCapabilities = () => (
             <div className="grid gap-4 sm:grid-cols-2">
                 {capabilities.map(([title, ...items], index) => <motion.div key={title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, delay: index * 0.08 }} className="rounded-2xl border border-white/10 bg-white/[0.045] p-6 transition hover:border-cyan-400/50 hover:bg-cyan-400/[0.07]">
                     <h3 className="text-lg font-bold text-cyan-300">{title}</h3>
-                    <ul className="mt-5 space-y-3">{items.map((item) => <li key={item} className="flex items-center gap-2 text-sm text-slate-200"><FiCheckCircle className="shrink-0 text-cyan-400" />{item}</li>)}</ul>
+                    <ul className="mt-6 space-y-3">{items.map((item) => <li key={item} className="flex items-center gap-2 text-sm text-slate-200"><FiCheckCircle className="shrink-0 text-cyan-400" />{item}</li>)}</ul>
                 </motion.div>)}
             </div>
         </div>
