@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 
@@ -8,7 +8,7 @@ const AllProject = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('../../../public/Project.json')
+        fetch('/Project.json')
             .then((res) => {
                 if (!res.ok) throw new Error('Failed to load projects');
                 return res.json();
