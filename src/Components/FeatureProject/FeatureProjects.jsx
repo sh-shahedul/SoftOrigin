@@ -62,7 +62,7 @@ const FeatureProjects = () => {
             className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3 font-mono text-sm text-slate-800 transition-all duration-300 hover:border-blue-700 hover:text-blue-700 hover:shadow-md hover:shadow-blue-700/10"
           >
             Show all projects
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="16" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14" />
               <path d="M13 6l6 6-6 6" />
             </svg>
