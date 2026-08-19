@@ -92,13 +92,13 @@
 .process-heading, .process-steps, .process-image-wrap { opacity: 0; transform: translateY(28px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.75,.25,1); }
 .process-heading.is-visible, .is-visible .process-steps, .is-visible .process-image-wrap { opacity: 1; transform: translateY(0); }
 .process-steps { display: grid; gap: .4rem; }
-.process-line { position: absolute; top: 2.2rem; bottom: 2.2rem; left: 2.1rem; width: 2px; background: #dbeafe; }
-.process-line::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: var(--progress); background: linear-gradient(#22d3ee, #001E5F); transition: height 500ms cubic-bezier(.2,.75,.25,1); }
+.process-line { position: absolute; top: 2.2rem; bottom: 2.2rem; left: 2.1rem; width: 2px; background: rgba(36, 157, 143, .2); }
+.process-line::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: var(--progress); background: linear-gradient(#249D8F, #E76F51); transition: height 500ms cubic-bezier(.2,.75,.25,1); }
 .process-step { opacity: 0; transform: translateX(-20px); border: 1px solid transparent; transition: opacity 520ms ease, transform 520ms cubic-bezier(.2,.75,.25,1), background-color 280ms ease, border-color 280ms ease, box-shadow 280ms ease; }
 .is-visible .process-step { opacity: 1; transform: translateX(0); }
-.process-step:hover, .process-step.is-active { background: linear-gradient(100deg, #effbff, #f8fbff); border-color: #a5f3fc; box-shadow: 0 12px 28px rgba(0, 30, 95, .08); transform: translateX(7px); }
-.process-icon { color: #0891b2; background: #e0f7fa; box-shadow: 0 0 0 5px #fff; transition: color 280ms ease, background-color 280ms ease, transform 350ms cubic-bezier(.2,.75,.25,1); }
-.process-step:hover .process-icon, .process-step.is-active .process-icon { background: #001E5F; color: #fff; transform: rotate(-8deg) scale(1.08); }
+.process-step:hover, .process-step.is-active { background: linear-gradient(100deg, #FDF0D5, #fffaf0); border-color: #E9C46A; box-shadow: 0 12px 28px rgba(36, 157, 143, .1); transform: translateX(7px); }
+.process-icon { color: #249D8F; background: #FDF0D5; box-shadow: 0 0 0 5px #fff; transition: color 280ms ease, background-color 280ms ease, transform 350ms cubic-bezier(.2,.75,.25,1); }
+.process-step:hover .process-icon, .process-step.is-active .process-icon { background: #249D8F; color: #fff; transform: rotate(-8deg) scale(1.08); }
 .process-description { max-height: 0; opacity: 0; overflow: hidden; transition: max-height 300ms ease, opacity 250ms ease; }
 .process-step:hover .process-description, .process-step.is-active .process-description { max-height: 4.5rem; opacity: 1; }
 .process-orb { position: absolute; border-radius: 999px; filter: blur(2px); animation: processOrbFloat 6s ease-in-out infinite; }

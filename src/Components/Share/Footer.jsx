@@ -11,9 +11,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300">
+    <footer className="bg-[#173B3A] text-slate-300">
       {/* Top Accent Line */}
-      <div className="h-1 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700" />
+      <div className="h-1 bg-gradient-to-r from-[#249D8F] via-[#E9C46A] to-[#E76F51]" />
 
       {/* Main Footer Content */}
       <div className="mx-auto max-w-[1440px] px-6 pt-16 pb-12">
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-4xl font-bold text-white">
              
-              Soft<span className='text-blue-700'>Origin</span>
+              Soft<span className='text-[#E9C46A]'>Origin</span>
              
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
@@ -42,7 +42,7 @@ const Footer = () => {
                   href={social.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/80 text-slate-300 transition-all duration-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white hover:shadow-md hover:shadow-blue-600/20"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-slate-300 transition-all duration-300 hover:border-[#E9C46A] hover:bg-[#249D8F] hover:text-white"
                 >
                   {social.icon}
                 </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={item.path}
-                    className="inline-block transition-colors duration-200 hover:text-blue-400 hover:translate-x-1 transform"
+                    className="inline-block transition-colors duration-200 hover:text-[#E9C46A] hover:translate-x-1 transform"
                   >
                     {item.name}
                   </a>
@@ -82,18 +82,18 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-3">
-                <FaMapMarkerAlt className="mt-1 text-blue-500 shrink-0" />
+                <FaMapMarkerAlt className="mt-1 text-[#E9C46A] shrink-0" />
                 <span>Dhaka, Bangladesh</span>
               </li>
               <li className="flex items-center gap-3">
-                <FaEnvelope className="text-blue-500 shrink-0" />
-                <a href="mailto:contact@softorigin.com" className="hover:text-blue-400 transition-colors">
+                <FaEnvelope className="text-[#E9C46A] shrink-0" />
+                <a href="mailto:contact@softorigin.com" className="hover:text-[#E9C46A] transition-colors">
                   shahedulhoque2003@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <FaPhoneAlt className="text-blue-500 shrink-0" />
-                <a href="tel:+880123456789" className="hover:text-blue-400 transition-colors">
+                <FaPhoneAlt className="text-[#E9C46A] shrink-0" />
+                <a href="tel:+880123456789" className="hover:text-[#E9C46A] transition-colors">
                   +880 1700-000000
                 </a>
               </li>
@@ -113,12 +113,12 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full rounded-lg border border-slate-700 bg-slate-800/80 px-4 py-2.5 text-sm text-white placeholder-slate-500 outline-none transition-all duration-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-slate-400 outline-none transition-all duration-300 focus:border-[#E9C46A] focus:ring-1 focus:ring-[#E9C46A]"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-600/25 active:scale-[0.98]"
+                className="w-full rounded-lg bg-[#E76F51] px-4 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#d85e42] hover:shadow-lg hover:shadow-[#E76F51]/25 active:scale-[0.98]"
               >
                 Subscribe
               </button>

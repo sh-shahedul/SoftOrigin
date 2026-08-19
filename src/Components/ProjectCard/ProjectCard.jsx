@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub, FiArrowUpRight } from 'react-icons/fi';
 
@@ -98,4 +97,4 @@ const ProjectCard = ({ project }) => {
     );
 };
 
-export default ProjectCard; 
+export default ProjectCard;

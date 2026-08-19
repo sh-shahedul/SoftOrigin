@@ -1,1 +1,155 @@
 @import "tailwindcss";
+
+/* SoftOrigin visual system — warm, confident and deliberately restrained. */
+:root {
+  --brand: #249D8F;
+  --brand-deep: #16766c;
+  --sun: #E9C46A;
+  --coral: #E76F51;
+  --canvas: #FDF0D5;
+  --ink: #173b3a;
+  --muted: #5d716d;
+  --line: rgba(36, 157, 143, .18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+::selection { background: var(--sun); color: var(--ink); }
+
+.site-shell { background: var(--canvas); }
+
+/* A consistent editorial rhythm for the page sections. */
+.site-shell main > section { position: relative; }
+.site-shell main > section:nth-child(odd) { background-color: #fff !important; }
+.site-shell main > section:nth-child(even) { background-color: var(--canvas) !important; }
+
+/* Palette mapping for the existing utility-driven components.  These rules come
+   after Tailwind and intentionally keep the original layouts intact. */
+.site-shell .text-blue-700, .site-shell .text-cyan-400, .site-shell .text-\[\#14A9B8\] { color: var(--brand) !important; }
+.site-shell .text-slate-900, .site-shell .text-gray-900, .site-shell .text-\[\#001E5F\] { color: var(--ink) !important; }
+.site-shell .text-slate-600, .site-shell .text-gray-600, .site-shell .text-gray-500 { color: var(--muted) !important; }
+.site-shell .bg-blue-100\/20, .site-shell .bg-\[\#f8fafc\] { background-color: rgba(233, 196, 106, .17) !important; }
+.site-shell .bg-\[\#001E5F\], .site-shell .bg-\[\#020b1d\], .site-shell .bg-slate-900 { background-color: var(--ink) !important; }
+.site-shell .bg-\[\#001E5F\]\/90, .site-shell .bg-\[\#001E5F\]\/95 { background-color: rgb(23 59 58 / .92) !important; }
+.site-shell .bg-\[\#02102f\]\/90 { background-color: rgb(23 59 58 / .90) !important; }
+.site-shell .bg-\[\#07152c\], .site-shell .bg-\[\#082458\], .site-shell .bg-\[\#0b1228\] { background-color: #1c4b48 !important; }
+.site-shell .bg-cyan-400, .site-shell .bg-cyan-500, .site-shell .bg-\[\#14D8D4\] { background-color: var(--brand) !important; }
+.site-shell .hover\:bg-cyan-300:hover, .site-shell .hover\:bg-cyan-400:hover, .site-shell .hover\:bg-cyan-600:hover { background-color: var(--brand-deep) !important; }
+.site-shell .border-cyan-300\/35, .site-shell .border-cyan-300\/50, .site-shell .border-slate-200, .site-shell .border-slate-300 { border-color: var(--line) !important; }
+.site-shell .hover\:text-blue-700:hover, .site-shell .hover\:text-blue-400:hover { color: var(--brand) !important; }
+.site-shell .bg-gradient-to-r.from-\[\#001E5F\], .site-shell .bg-gradient-to-t.from-\[\#020b1d\] { --tw-gradient-from: var(--ink) var(--tw-gradient-from-position) !important; }
+
+/* Eliminate every remaining legacy blue/cyan state, including interactive
+   variants used inside cards, accordions and image overlays. */
+.site-shell .text-blue-300, .site-shell .text-blue-400, .site-shell .text-blue-500, .site-shell .text-blue-600, .site-shell .text-blue-700,
+.site-shell .text-cyan-200, .site-shell .text-cyan-300, .site-shell .text-cyan-400, .site-shell .text-cyan-700,
+.site-shell .text-\[\#2F5FFF\], .site-shell .text-\[\#14A9B8\], .site-shell .text-\[\#14D8D4\],
+.site-shell .group-hover\:text-blue-700:is(:where(.group):hover *), .site-shell .group-hover\:text-cyan-300:is(:where(.group):hover *) { color: var(--brand) !important; }
+
+.site-shell .bg-blue-500, .site-shell .bg-blue-600, .site-shell .bg-blue-700,
+.site-shell .bg-cyan-300, .site-shell .bg-cyan-400, .site-shell .bg-cyan-500,
+.site-shell .bg-\[\#2F5FFF\], .site-shell .group-hover\:bg-\[\#2F5FFF\]:is(:where(.group):hover *),
+.site-shell .group-hover\:bg-\[\#001E5F\]:is(:where(.group):hover *) { background-color: var(--brand) !important; }
+
+.site-shell .bg-blue-50, .site-shell .bg-blue-50\/50, .site-shell .bg-blue-100\/20,
+.site-shell .bg-blue-200\/50, .site-shell .bg-cyan-400\/10, .site-shell .bg-cyan-400\/15,
+.site-shell .bg-cyan-500\/10, .site-shell .bg-cyan-200\/50, .site-shell .bg-\[\#2F5FFF\]\/5,
+.site-shell .bg-\[\#2F5FFF\]\/10, .site-shell .bg-\[\#14D8D4\]\/5, .site-shell .bg-\[\#14D8D4\]\/10,
+.site-shell .bg-\[\#14D8D4\]\/15, .site-shell .bg-\[\#001E5F\]\/5 { background-color: rgb(233 196 106 / .22) !important; }
+
+.site-shell .border-blue-200, .site-shell .border-blue-600, .site-shell .border-cyan-100,
+.site-shell .border-cyan-400\/50, .site-shell .border-cyan-500\/20, .site-shell .border-cyan-500\/30,
+.site-shell .border-cyan-500\/40, .site-shell .border-cyan-500\/50, .site-shell .border-\[\#2F5FFF\]\/30,
+.site-shell .border-\[\#14D8D4\]\/20, .site-shell .border-\[\#14D8D4\]\/25, .site-shell .border-\[\#14D8D4\]\/40,
+.site-shell .hover\:border-blue-700\/40:hover, .site-shell .hover\:border-\[\#2F5FFF\]:hover,
+.site-shell .group-hover\:border-blue-200:is(:where(.group):hover *) { border-color: var(--brand) !important; }
+
+.site-shell .hover\:bg-blue-600:hover, .site-shell .hover\:bg-blue-700:hover, .site-shell .hover\:bg-blue-50:hover,
+.site-shell .hover\:bg-purple-600:hover, .site-shell .group-hover\:bg-blue-600:is(:where(.group):hover *) { background-color: var(--coral) !important; }
+.site-shell .hover\:text-blue-700:hover, .site-shell .hover\:text-blue-400:hover { color: var(--brand) !important; }
+
+.site-shell .from-blue-700, .site-shell .from-cyan-300, .site-shell .from-cyan-400, .site-shell .from-cyan-500 { --tw-gradient-from: var(--brand) var(--tw-gradient-from-position) !important; }
+.site-shell .via-blue-400, .site-shell .via-blue-500, .site-shell .via-indigo-500 { --tw-gradient-via: var(--sun) var(--tw-gradient-via-position) !important; }
+.site-shell .to-blue-600, .site-shell .to-blue-700, .site-shell .to-indigo-400, .site-shell .to-sky-400 { --tw-gradient-to: var(--coral) var(--tw-gradient-to-position) !important; }
+
+.site-shell a:focus-visible, .site-shell button:focus-visible, .site-shell input:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 3px;
+}
+@theme {
+  --color-blue-50: #FDF0D5; --color-blue-100: #F7E2B5; --color-blue-200: #E9C46A; --color-blue-300: #D7AD45;
+  --color-blue-400: #249D8F; --color-blue-500: #249D8F; --color-blue-600: #1D8579; --color-blue-700: #16766C;
+  --color-cyan-50: #FFFBF2; --color-cyan-100: #FDF0D5; --color-cyan-200: #E9C46A; --color-cyan-300: #FDF0D5;
+  --color-cyan-400: #249D8F; --color-cyan-500: #249D8F; --color-cyan-600: #1D8579; --color-cyan-700: #16766C;
+  --color-indigo-400: #E9C46A; --color-indigo-500: #E9C46A; --color-purple-600: #E76F51; --color-sky-400: #E76F51;
+  --color-slate-300: #DCE5D8; --color-slate-400: #B8CBBF; --color-slate-500: #728B82; --color-slate-600: #4C6962;
+}
+
+body { background: #FDF0D5; color: #173B3A; }
+
+/* Existing arbitrary-value utilities, recolored without changing any hover rule. */
+.bg-\[\#001E5F\], .bg-\[\#020b1d\], .bg-\[\#02102f\], .bg-\[\#07152c\], .bg-\[\#082458\], .bg-\[\#0b1228\], .bg-\[\#102859\] { background-color: #173B3A; }
+.bg-\[\#001E5F\]\/90, .bg-\[\#02102f\]\/90 { background-color: rgb(23 59 58 / .9); }
+.text-\[\#001E5F\], .text-\[\#0B1B4D\] { color: #173B3A; }
+.text-\[\#2F5FFF\], .text-\[\#14A9B8\], .text-\[\#14D8D4\] { color: #249D8F; }
+.bg-\[\#14D8D4\], .bg-\[\#2F5FFF\] { background-color: #249D8F; }
+.bg-\[\#2F5FFF\]\/5, .bg-\[\#2F5FFF\]\/10, .bg-\[\#14D8D4\]\/5, .bg-\[\#14D8D4\]\/10, .bg-\[\#14D8D4\]\/15, .bg-\[\#EEF4FF\] { background-color: rgb(233 196 106 / .22); }
+
+/* Custom-color hover and gradient utilities retain their original trigger and
+   transition; only their rendered color is replaced. */
+.hover\:border-\[\#2F5FFF\]:hover { border-color: #249D8F; }
+.hover\:border-\[\#2F5FFF\]\/50:hover { border-color: rgb(36 157 143 / .5); }
+.hover\:bg-\[\#2F5FFF\]\/5:hover { background-color: rgb(36 157 143 / .05); }
+.group:hover .group-hover\:bg-\[\#2F5FFF\] { background-color: #249D8F; }
+.group:hover .group-hover\:text-\[\#14D8D4\] { color: #FDF0D5; }
+.group:hover .group-hover\:bg-\[\#001E5F\] { background-color: #173B3A; }
+.group:hover .group-hover\:bg-cyan-400\/20 { background-color: rgb(253 240 213 / .22); }
+.from-\[\#082458\], .from-\[\#001E5F\], .from-\[\#020b1d\] { --tw-gradient-from: #173B3A var(--tw-gradient-from-position); }
+.via-\[\#001E5F\] { --tw-gradient-via: #1D8579 var(--tw-gradient-via-position); }
+.to-\[\#0b1228\], .to-\[\#001E5F\], .to-\[\#14D8D4\] { --tw-gradient-to: #249D8F var(--tw-gradient-to-position); }
+
+/* Shared type scale and vertical rhythm — presentation only, with no component
+   markup or interaction changes. */
+main h1 {
+  font-size: clamp(2.25rem, 4.7vw, 4rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+main h2 {
+  font-size: clamp(1.75rem, 3.3vw, 2.75rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.18 !important;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+
+/* The Projects page heading is a section heading, not a hero heading. */
+main > div > .max-w-3xl > h1 {
+  font-size: clamp(1.75rem, 3.3vw, 2.75rem) !important;
+  line-height: 1.18 !important;
+}
+
+main section p {
+  font-size: clamp(.9375rem, 1.1vw, 1.0625rem) !important;
+  line-height: 1.7 !important;
+}
+
+main section:not(:has(h1)) {
+  padding-block: clamp(4rem, 7vw, 6rem) !important;
+}
+
+@media (max-width: 640px) {
+  main h1 { font-size: 2rem !important; line-height: 1.16 !important; }
+  main h2, main > div > .max-w-3xl > h1 { font-size: 1.65rem !important; }
+  main section:not(:has(h1)) { padding-block: 3.5rem !important; }
+}

@@ -1,4 +1,3 @@
-import { Link } from 'react-router';
 import heroImage from '../../assets/hero.jpg';
 
 const HeroAbout = () => (
